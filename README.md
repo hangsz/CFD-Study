@@ -73,14 +73,14 @@ Fortran程序语言设计| [Fortran实用编程](http://v.fcode.cn/) | [Fortran9
 ---
 <h3 id="practice_basic"> 实战练习 </h3>
 
-翼型绕流二维求解器编写（Fortran行数：到达第四阶段代码量5000行左右）：
-可参考：[NS-2D](https://github.com/hangsz/NS-2D)
+翼型绕流二维求解器编写，可参考 [NS-2D](https://github.com/hangsz/NS-2D)：
 - 第一阶段 Euler方程求解器 ：建议对流项离散采用JST格式。时间离散可以采用 显示 Runge-Kutta法。upwind格式和隐式推进较难，以后可以再完善。
 - 第二阶段 NS方程求解器：比Euler只多了扩散项，这一项离散比较简单。
 - 第三阶段 采用upwind格式和隐式格式：现在要求解大型代数方程组了，当然是LU-SGS方法。
 - 第三阶段 湍流模型： 建议采用SA模型，这个是一方程的，简单。湍流方程和NS方程耦合求解。
 - 第四阶段 预处理： 之前的都是适合可压流，预处理之后适合全速域。
 - 第五阶段 动网格...
+Fortran行数：到达第四阶段代码量5000行左右
 
 ---
 <h2 id="booklists">推荐书籍列表</h2>
